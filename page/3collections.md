@@ -15,4 +15,3 @@ type: page
 
     在线放大图片。
 
-{% include comments.html %}

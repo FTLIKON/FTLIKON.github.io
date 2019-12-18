@@ -26,4 +26,3 @@ type: page
 * 若您想使用这个博客主题，请访问：[https://github.com/FTLIKON/FTLIKON.github.io]
 
 
-{% include comments.html %}
