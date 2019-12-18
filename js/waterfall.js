@@ -14,19 +14,12 @@
      */
   var demoContent = [
     {
-      demo_link: 'https://codepen.io/haoyang/pen/jrvrQq',
-      img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
-      code_link: 'https://codepen.io/haoyang/pen/jrvrQq',
-      title: 'Fisher-Yates 洗牌算法动画',
-      core_tech: 'JavaScript',
-      description: 'Fisher-Yates 洗牌算法动画。算法详情见 <a href ="https://gaohaoyang.github.io/2016/10/16/shuffle-algorithm/">这里</a>。'
-    },{
-      demo_link: 'http://gaohaoyang.github.io/test/bootstrap-zhihu/',
-      img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-CopyZhihu.jpg',
-      code_link: 'https://github.com/Gaohaoyang/test/tree/master/bootstrap-zhihu',
-      title: '仿知乎页面',
-      core_tech: 'HTML BootStrap',
-      description: '使用BootStrap仿照知乎做了一个静态页面。'
+      demo_link: 'https://bigjpg.com/',
+      img_link: 'https://bigjpg.com/',
+      code_link: 'https://bigjpg.com/',
+      title: 'big-jpg',
+      core_tech: 'jpg',
+      description: '在线放大图片'
     }
   ];
 
