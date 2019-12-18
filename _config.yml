@@ -1,5 +1,5 @@
-title: LLB的技术专栏
-brief-intro: ACdreamer
+title: LLB的个人主页
+brief-intro: The ACdreamer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ftlikon.github.io/" # the base hostname & protocol for your site
 
@@ -15,7 +15,7 @@ zhihu_username:
 linkedIn_username:
 dribbble_username:
 
-description_footer: 来自LLB的个人专栏！
+description_footer: 来自LLB的个人主页！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
