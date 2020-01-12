@@ -92,5 +92,64 @@ int main()
 ```
 ---
 
+>　B - Hyperset
+
+* 题意:三个字符串中,同一位置的字符都相同或者都不同,为一个"三元组".现在给定n个字符串,问能组成多少个三元组?
+
+* 思路:根据大佬的代码,我的分析如下:
+
+1. 有题义可知时间复杂度被限定在了O(n^2),那么需要降低时间复杂度,暴力不可取.
+2. 我们需要用一个 map<string,int> 将已经出现的字符串给储存起来便于查询 
+3. 降低时间复杂度的关键在于: 构建一个新的字符串满足已经出现的第一与第二字符串,查看该字符串在map中是否存在
+4. 注意关键是不能有重复的结果 所以需要通过构建第三个字符串来查询.
+
+
+```c++
+
+#include <iostream>
+#include <cstdio>
+#include <map>
+using namespace std;
+const int maxn = 1505;
+string x[maxn];
+int n, k;
+int main()
+{
+    cin >> n >> k;
+    for (int i = 0; i < n; i++)
+        cin >> x[i];
+
+    int ans = 0;
+    std::map<string, int> cnt;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i + 1; j < n; j++)
+        {
+            string temp;
+            for (int z = 0; z < k; z++)
+            {
+                if (x[i][z] == x[j][z])
+                {
+                    temp += x[j][z];
+                }
+                else
+                {
+                    if (x[i][z] != 'S' && x[j][z] != 'S')
+                        temp += 'S';
+                    else if (x[i][z] != 'E' && x[j][z] != 'E')
+                        temp += 'E';
+                    else
+                        temp += 'T';
+                }
+            }
+            ans += cnt[temp];
+        }
+        cnt[x[i]]++;//如果不这样而提前赋值的话会出现重复的情况
+    }
+    cout << ans << endl;
+    return 0;
+}
+
+```
 
 
