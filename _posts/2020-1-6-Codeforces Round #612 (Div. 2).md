@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Codeforces Round #612 (Div. 2)题解"
+title:  "Codeforces Round #612 (Div. 2)题解-ABC"
 date:   2020-1-6 9:20:54
 categories: CodeForces 题解
 tags: MyBlog CF 
@@ -11,8 +11,6 @@ tags: MyBlog CF
 
 一场深夜和学长们连麦的CF 虽然依旧还是这么菜 
 但是和学长连麦打CF的快乐还是很爽哎嘿嘿
-
----
 
 # 赛后总结
 
