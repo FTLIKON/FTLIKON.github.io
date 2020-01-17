@@ -42,3 +42,7 @@ type: page
 ---
 
 * [KMP算法](https://blog.csdn.net/f1033774377/article/details/82556438)
+
+---
+
+* [背包九讲](https://blog.csdn.net/yandaoqiusheng/article/details/84782655)
