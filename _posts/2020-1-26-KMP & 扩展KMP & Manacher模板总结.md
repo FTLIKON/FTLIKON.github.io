@@ -122,7 +122,8 @@ string Manacher(string s1)
     for (int i = 0; i < s1.size(); i++)
         s += s1[i], s += "#";
     vector<int> p(s.size(), 0);                   // p数组进行存储回文串的长度
-    int id = 0, mx = 0, maxpoint = 0, maxlen = 0; //mx是回文串到达的最右端 id是mx对应的回文串中点 maxpoint是最长回文串的中点 maxlen是最长回文串的长度
+    int id = 0, mx = 0, maxpoint = 0, maxlen = 0; 
+    //mx是回文串到达的最右端 id是mx对应的回文串中点 maxpoint是最长回文串的中点 maxlen是最长回文串的长度
     for (int i = 1; i < s.size(); i++)
     {
         p[i] = mx > i + p[i] ? min(mx - i, p[2 * id - i]) : 1; //这一句是关键点
