@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Kuangbin专题十六 - KMP & 扩展KMP & Manacher模板总结"
-date:   2020-1-6 9:20:54
+date:   2020-1-26 19:20:54
 categories: 心得 模板
 tags: MyBlog 模板 心得
 ---
@@ -9,7 +9,8 @@ tags: MyBlog 模板 心得
 * content
 {:toc}
 
-从2019/12-28 - 2020/1/26 学习了kuangbin专题中算法题量最大的“KMP & 扩展KMP & Manacher模板总结”专题，在此记录下自己痛苦的蜕变和学习获得的关于各类字符串处理模板和心得。
+从2019/12-28 - 2020/1/26 学习了kuangbin专题中题量最大的“KMP & 扩展KMP & Manacher”专题。
+在此记录下自己痛苦的蜕变和学习获得的关于各类字符串处理模板和心得。
 
 
 
