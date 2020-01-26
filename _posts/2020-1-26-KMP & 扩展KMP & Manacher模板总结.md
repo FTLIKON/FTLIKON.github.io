@@ -140,12 +140,14 @@ string Manacher(string s1)
 > 最大前后缀匹配
 
 * 在一个由两个字符串连接的字符串中求最大前后缀匹配
+
 ```c++
 
 while (nexts[l] > l1 || nexts[l] > l2 && nexts[l] > 0)
     l = nexts[l];
 
 ```
+
 ---
 > 查询字符串
 
