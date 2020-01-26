@@ -152,6 +152,7 @@ while (nexts[l] > l1 || nexts[l] > l2 && nexts[l] > 0)
 > 查询字符串
 
 * 关于查询字符串是否存在操作 时间复杂度类KMP
+
 ```c++
 
 if (s[k].find(p) == string::npos)
