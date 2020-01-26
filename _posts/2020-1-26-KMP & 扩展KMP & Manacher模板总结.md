@@ -141,12 +141,17 @@ string Manacher(string s1)
 
 * 在一个由两个字符串连接的字符串中求最大前后缀匹配
 ```c++
+
 while (nexts[l] > l1 || nexts[l] > l2 && nexts[l] > 0)
     l = nexts[l];
+
 ```
 ---
 > 查询字符串
+
 * 关于查询字符串是否存在操作 时间复杂度类KMP
 ```c++
+
 if (s[k].find(p) == string::npos)
+
 ```
