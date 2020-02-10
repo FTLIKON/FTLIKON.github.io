@@ -77,3 +77,5 @@ type: page
 ---
 
 * [最长回文子串——马拉车算法详解](https://blog.csdn.net/HappyRocking/article/details/82622881)
+
+* [位运算符(&、|、^、~等）详解](https://blog.csdn.net/Marccco/article/details/88709481)
