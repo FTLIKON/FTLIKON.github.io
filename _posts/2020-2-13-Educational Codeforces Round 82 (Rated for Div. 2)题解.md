@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Codeforces Round #618 (Div. 2) 题解"
+title:  "Educational Codeforces Round 82 (Rated for Div. 2) 题解"
 date:   2020-2-13 14:48:54
 categories: CodeForces 题解
 tags: MyBlog CF 
