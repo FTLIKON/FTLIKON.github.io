@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Codeforces Round #618 (Div. 2) 题解"
-date:   2020-2-13 14:48:54
+date:   2020-2-14 15:26:47
 categories: CodeForces 题解
 tags: MyBlog CF 
 ---
@@ -176,60 +176,74 @@ int main()
 > D - Time to Run
 
 * 题意:
-给了一个数字n，然后给了m个数，这m个数都是2的幂次方。现在每次操作你可以把m个数中的一个一分为2，比如32 操作一次得到两个16，在操作一次就是4个8，这样是操作了两次，问最少要操作多少次，可以在操作后把这些数字恰好凑为n。
+给定一个n*m大小的图，从起点开始走，每一条边只能正反各穿过一次，问有K次机会，怎么走才能走更多的路。
 
 * 思路:
-1. 显然 如果m个数总和＜n 自然就是输出-1
+1. 可以发现通过合适的方法，我们可以将所有边都走遍，那么这个方法就是先不停向右再不停向左然后向下直到走到最后一行的最右边，然后开始向上走再向下走再向左走就可以将整张图走完
 
-2. 如果可以的话我们考虑二进制，先把这m个数，用cnt[i]存下来 cnt[i]表示二进制从低到高 第i位有多少个数
+2. 比较复杂的就是如何记录路径，可以开一个vector里面存放的是pair<int,string>,分别是重复的次数与方向
 
-3. 然后 我们对于n进二进制，如果对于n当前该二进制位i是1.，我们去看cnt[i]是不是有没有，有的话，自然就不用把其他数拆分为两个原来的一半，然后如果该为有剩余，每两个可以凑成一个cnt[i+1]。如果cnt[i]为0，我们就ans++，然后cnt[i+1]–-，因为我们需要实现一个拆分
+3. 之后再不停答案存到另一个vector中，然后累计x直到k位置就跳出，最后再输出即可
 
 ```c++
 
-ll cnt[70];
 int main()
 {
-    int t;
-    cin >> t;
-    while (t--)
+    int n, m, k;
+    vector<pair<int, string>> V, ans;
+    cin >> n >> m >> k;
+    for (int i = 0; i < n - 1; i++)
     {
-        memset(cnt, 0, sizeof cnt);
-        ll n, m;
-        cin >> n >> m;
-        ll sum = 0;
-        for (int i = 0; i < m; i++)
+        if (m - 1 != 0)// 先把左右全部跑完，每次跑完一层D一下
         {
-
-            int num = 0, x;
-            cin >> x;
-            sum += x;
-            while (x)
-                num++, x >>= 1;
-            cnt[num - 1]++;
+            V.push_back({m - 1, "R"});
+            V.push_back({m - 1, "L"});
         }
-        if (sum < n)
+        V.push_back({1, "D"});
+    }
+    if (m - 1 != 0)// 最后一层只去不回
+    {
+        V.push_back({m - 1, "R"});
+    }
+    for (int i = 0; i < m - 1; i++)
+    {
+        if (n - 1 != 0)// 再把上下全部跑完，每次跑完一层L一下
         {
-            puts("-1");
-            continue;
+            V.push_back({n - 1, "U"});
+            V.push_back({n - 1, "D"});
         }
-        else
+        V.push_back({1, "L"});
+    }
+    if (n - 1 != 0)
+    {
+        V.push_back({n - 1, "U"});// 回到起点
+    }
+    for (int i = 0; i < V.size(); i++)// 处理答案
+    {
+        if (k >= V[i].first)
         {
-            int ans = 0;
-            for (int i = 0; i <= 63; i++)
-            {
-
-                int x = (n >> i) & 1;
-                cnt[i] -= x;
-                if (cnt[i] >= 2)
-                    cnt[i + 1] += cnt[i] / 2;
-                if (cnt[i] < 0)
-                    ans++, cnt[i + 1]--;
-            }
-            cout << ans << endl;
+            k -= V[i].first;
+            ans.push_back(V[i]);
+        }
+        else if (k != 0 && V[i].first > k)
+        {
+            ans.push_back({k, V[i].second});
+            k = 0;
         }
     }
-    return 0;
+    if (k > 0)
+    {
+        cout << "NO" << endl;
+    }
+    else
+    {
+        cout << "YES" << endl;
+        cout << ans.size() << endl;
+        for (int i = 0; i < ans.size(); i++)
+        {
+            cout << ans[i].first << " " << ans[i].second << endl;
+        }
+    }
 }
 
 ```
