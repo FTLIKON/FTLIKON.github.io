@@ -50,32 +50,45 @@ type: page
 ---
 
 * [二叉树遍历详解](https://blog.csdn.net/young2415/article/details/87467118)
+
 ---
 
 * [教你彻底学会动态规划——入门篇](https://blog.csdn.net/baidu_28312631/article/details/47418773)
+
 ---
 
 * [教你彻底学会动态规划——进阶篇](https://blog.csdn.net/baidu_28312631/article/details/47426445)
+
 ---
 
 * [拓展kmp（EXKMP）算法总结](https://blog.csdn.net/dyx404514/article/details/41831947)
+
 ---
 
 * [字符串Hash总结](https://www.cnblogs.com/Slager-Z/p/7807011.html)
+
 ---
 
 * [浅谈Trie树（字典树）](https://www.cnblogs.com/TheRoadToTheGold/p/6290732.html)
+
 ---
 
-* [输入挂--cin优化](https://blog.csdn.net/weixin_44772995/article/details/92839903)
+* [输入挂cin优化](https://blog.csdn.net/weixin_44772995/article/details/92839903)
+
 ---
 
 * [最小(大)表示法模板及详解](https://blog.csdn.net/li1615882553/article/details/80136776)
+
 ---
 
 * [关于Manacher/马拉车算法的个人总结](https://blog.csdn.net/JiangHxin/article/details/102554413)
+
 ---
 
 * [最长回文子串——马拉车算法详解](https://blog.csdn.net/HappyRocking/article/details/82622881)
 
-* [位运算符(&、|、^、~等）详解](https://blog.csdn.net/Marccco/article/details/88709481)
+---
+
+* [位运算符(&、^、~等）详解](https://blog.csdn.net/Marccco/article/details/88709481)
+
+---
