@@ -9,7 +9,7 @@ tags: MyBlog CF
 * content
 {:toc}
 
-依旧是常规CFround。这场ABC相对比较简单 但是D题难得出奇- -.....
+依旧是常规CFround。这场ABC题相对之前的比较简单 但是D题难得出奇- -.....
 
 
 
@@ -55,83 +55,113 @@ int main()
 > B - Homecoming
 
 * 题意:
-一个兔子想从（0,0）跳到（x，0），每次可以跳的距离必须符合输入的n种情况之一，求兔子至少需要跳多少次才能达到。
+输入一段路程的公交车和电车的排布，一个人需要从第一个站坐公交出行到最后一个站，他有p元钱，坐一次公交车和电车的花费分别是a，b元，问他至少需要走多少步开始坐车才能到达终点。
 
 * 思路:
-1. 如果兔子到终点的距离在输入的情况之内，那么只需要跳一次。
-2. 如果没有这种情况，那么求输入的情况的最大值，所以兔子需要跳的次数为max（2,距离/最大值），这是因为答案至少是[距离/最大值]，如果少了的话兔子无法达到终点。
-
+1. 从后往前遍历，从钱数中依次扣除需要花费的公交车/电车费用，当钱数小于0时输出答案即可。
+2. 注意答案至少为1 因为走到第一个站需要1步。
 ```c++
 
-int s[100005];
-
-map<int, int> p;
-
+char s[100005];
 int main()
 {
-	int T;
-	cin >> T;
-	while (T--)
-	{
-		p.clear();
-		int n, x;
-		cin >> n >> x;
-		for (int i = 0; i < n; i++)
-		{
-			cin >> s[i];
-			p[s[i]] = 1;
-		}
-		sort(s,s+n);
-		if (p[x])
-			cout << "1" << endl;
-		else
-			cout << max(2, ((x + s[n - 1] - 1) / (s[n - 1]))) << endl;
-	}
+    IOS;
+    int T;
+    cin >> T;
+    while (T--)
+    {
+        int a, b, p, flag = 0;
+        cin >> a >> b >> p;
+        cin >> s + 1;
+        int len = strlen(s + 1);
+        for (int i = len - 1; i >= 1; i--)
+        {
+            int j = i;
+            while (s[j] == s[i])
+                j--;
+            if (s[i] == 'A')
+                p -= a;
+            else
+                p -= b;
+            if (p < 0)
+            {
+                flag = 1;
+                cout << i + 1 << endl;
+                break;
+            }
+            i = j;
+            i++;
+        }
+        if (flag == 0)
+            cout << 1 << endl;
+    }
+    return 0;
 }
 
 ```
 
 ---
 
-> C - Cow and Message
+> C - Restoring Permutation
 
 * 题意:
-给你一个字符串s，求其中下标间隔为等差数列的子串最多有多少。
+给定一个大小为n的序列b，求大小为2n的满足bi=min(ai−1,ai)的a序列，要求所有ai必须满足在1~2n之间，若ai不够的话就输出-1。
 
 
 * 思路:
-1. 显然该子串只有可能是长度为1或者2的时候子串的数量能尽可能的多。
-2. 因为能够成长度为的2以上的子串一定可以先构成长度为2的子串，显然还多了很多限制。
-3. 所以我们先构造出符合给定字符串的所有子串，统计每一种长度为1和2的子串的数量，再求最大值。
-
+1. 因为数据范围较小，故该题直接暴力模拟。
+2. 枚举1-2n中所有没有数使用过的数，对每一个空判断大小后依次填入，如果1~2n中符合条件的数都填完了就只能输出-1.
+3. 话说这个题比B题简单一点吧。。。题意更好理解。
 
 ```c++
 
-ll vis[26], cnt[26][26];
+int a[1005], b[1005], vis[100005];
+
 int main()
 {
-	string s;
-	cin >> s;
-	int l = s.size();
-	ll ans = 0;
-	for (int i = 0; i < l; ++i)
-	{
-		for (int j = 0; j < 26; ++j)
-		{
-			if (vis[j])
-				cnt[j][s[i] - 'a'] += vis[j];
-		}
-		vis[s[i] - 'a']++;
-		ans = max(ans, vis[s[i] - 'a']);
-	}
-	for (int i = 0; i < 26; ++i)
-	{
-		for (int j = 0; j < 26; ++j)
-		{
-			ans = max(ans, cnt[i][j]);
-		}
-	}
-	cout << ans;
+    IOS;
+    int T;
+    cin >> T;
+    while (T--)
+    {
+        int flag = 0;
+        memset(vis, 0, sizeof(vis));
+        int n;
+        cin >> n;
+        for (int i = 0; i < n; i++)
+        {
+            cin >> a[i];
+            vis[a[i]] = 1;
+        }
+        for (int i = 0; i < 2 * n; i++)
+        {
+            if (i % 2 == 0 || i == 0)
+            {
+                b[i] = a[i / 2];
+                continue;
+            }
+            for (int j = 1; j <= 2 * n + 1; j++)
+            {
+                if (vis[j] == 0 && j > b[i - 1])
+                {
+                    b[i] = j;
+                    if (j == 2 * n + 1)
+                        flag = 1;
+                    vis[j] = 1;
+                    break;
+                }
+            }
+        }
+        if (flag)
+            cout << "-1" << endl;
+        else
+        {
+            for (int i = 0; i < 2 * n; i++)
+                cout << b[i] << " ";
+            cout << endl;
+        }
+    }
+    return 0;
 }
 
 ```
