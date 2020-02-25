@@ -21,8 +21,6 @@ tags: MyBlog CF
 
 ---
 
-![](https://github.com/FTLIKON/FTLIKON.github.io/blob/master/_posts/pic/t1.jpg?raw=true)
-
 > A - Dead Pixel
 
 * 题意:
