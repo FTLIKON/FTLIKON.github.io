@@ -135,13 +135,51 @@ int main()
 > C - Perform the Combo
 
 * 题意:
-
+给一个长度为n的由小写字母组成的字符串，要把这个字符串取m次，每次的长度给定，问每种字母取过多少次。
 
 * 思路:
-
-
+应该比A题简单吧，不过题意理解起来是有点吃屎。因为要取m次，那么我们可以知道第一个字符至少要取m次，这时候到下一个字符，如果我们取的长度中有“1”的话，那么就要少取一次第二个字符，依次类推，可知只需要存一下到当前长度时有多少个长度已经不满足即可。
 ```c++
 
+int nums[500005];
+string s;
+int ans[100];
+int main()
+{   
+    IOS;
+    int T;
+    cin >> T;
+    while (T--)
+    {
+        int len, m;
+        cin >> len >> m;
+        cin >> s;
+        memset(nums, 0, sizeof(nums));
+        memset(ans, 0, sizeof(ans));
+        for (int i = 0; i < m; i++)
+        {
+            int temp;
+            cin >> temp;
+            nums[0]++;
+            nums[temp]--;
+        }
+
+        int cnt = 0;
+        for (int i = 0; i < len; i++)
+        {
+            cnt += nums[i];
+            ans[s[i] - 'a'] += cnt;
+            ans[s[i] - 'a']++;
+        }
+
+        for (int i = 0; i < 26; i++)
+        {
+            cout << ans[i] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
 
 
 ```
@@ -151,14 +189,39 @@ int main()
 > D - Three Integers
 
 * 题意:
+输入三个整数a，b，c，可以把a，b，c的值减小，要能够满足a，b，c能互相整除，问怎么处理才能使处理后的a，b，c的总和最大。
 
-
-* 思路:
-
-
+* 思路:  
+纯暴力，因为要满足a是b的因数，b是c的因数，故可以枚举所有情况，详情见代码。  
+时间复杂度：n*log(n)*log(log(n)) ,故不会超时。  
+话说赛后好多HACK成功的。。当时看的背后发凉。不过还好我的代码比较稳啊哈哈哈（小膨胀）。
 ```c++
 
-
+int main()
+{
+    IOS;
+    int T;
+    cin >> T;
+    while (T--)
+    {
+        ll a, b, c, a1, a2, a3;
+        ll ans = 99999999;
+        cin >> a >> b >> c;
+        for (int i = 1; i <= 10000; i++)
+        for (ll j = 1; j <= 10000 / i + 1; j++)
+        for (int k = 1; k <= 10000 / (i * j) + 2; k++)
+            if (ans > abs(i - a) + abs(i * j - b) + abs(i * j * k - c))
+            {
+                ans = abs(i - a) + abs(i * j - b) + abs(i * j * k - c);
+                a1 = i;
+                a2 = i * j;
+                a3 = i * j * k;
+            }
+        cout << ans << endl;
+        cout << a1 << " " << a2 << " " << a3 << endl;
+    }
+    return 0;
+}
 
 ```
 
