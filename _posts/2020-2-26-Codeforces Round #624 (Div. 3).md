@@ -73,14 +73,60 @@ int main()
 > B - WeirdSort
 
 * 题意:
-
+给定一个序列a，和该序列的可排序规则p，仅当pi存在时可以交换a[pi]和a[pi+1].问能否使该序列实现按照从小到大排序。
 
 * 思路:
+这个题最开始想的是模拟冒泡。。。然后一发WA3才发现小看了这个题。  
 
+这个题需要这样来想，当一段连续的pi存在时，就可以直接对这一段a[pi+i~pi+j]进行排序，那么我们只需要对于每一个存在的pi枚举所有可连续最长区间的情况，最后再对这些区间进行排序，最后再对处理完后的a序列遍历看是否符合从小到大排序即可。
 
 ```c++
 
-
+int m, n;
+int a[105];
+bool vis[105];
+int main()
+{
+    IOS;
+    int T;
+    cin >> T;
+    while (T--)
+    {
+        memset(vis, 0, sizeof(vis));
+        cin >> n >> m;
+        for (int i = 1; i <= n; i++)
+            cin >> a[i];
+        for (int i = 1; i <= m; i++)
+        {
+            int t;
+            cin >> t;
+            vis[t] = 1;
+        }
+        for (int i = 1; i <= n; i++)
+        {
+            if (!vis[i])
+                continue;
+            int j = i;
+            while (j + 1 <= n && vis[j + 1])
+                j++;
+            sort(a + i, a + j + 2);
+            i = j;
+        }
+        int flag = 0;
+        for (int i = 1; i <= n - 1; i++)
+        {
+            if (a[i] > a[i + 1])
+            {
+                flag = 1;
+            }
+        }
+        if (flag)
+            cout << "NO" << endl;
+        else
+            cout << "YES" << endl;
+    }
+    return 0;
+}
 
 ```
 
