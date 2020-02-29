@@ -15,13 +15,11 @@ tags: MyBlog CF
 
 
 
----
 
-# 题解正文
+> # 题解正文
 
----
 
-> ## A - Add Odd or Subtract Even
+## A - Add Odd or Subtract Even
 
 * 题意:  
 输入x，y两个数，每次操作可以使x加任意奇数或减任意偶数，问至少需要操作几次使x y相等。
@@ -70,7 +68,7 @@ int main()
 
 ---
 
-> ## B - WeirdSort
+## B - WeirdSort
 
 * 题意:  
 给定一个序列a，和该序列的可排序规则p，仅当pi存在时可以交换a[pi]和a[pi+1].问能否使该序列实现按照从小到大排序。
@@ -132,7 +130,7 @@ int main()
 
 ---
 
-> ## C - Perform the Combo
+## C - Perform the Combo
 
 * 题意:
 给一个长度为n的由小写字母组成的字符串，要把这个字符串取m次，每次的长度给定，问每种字母取过多少次。
@@ -187,7 +185,7 @@ int main()
 
 ---
 
-> ## D - Three Integers
+## D - Three Integers
 
 * 题意:
 输入三个整数a，b，c，可以把a，b，c的值减小，要能够满足a，b，c能互相整除，问怎么处理才能使处理后的a，b，c的总和最大。
