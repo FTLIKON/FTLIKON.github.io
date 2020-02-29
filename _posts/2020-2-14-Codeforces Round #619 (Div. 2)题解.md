@@ -17,11 +17,9 @@ tags: MyBlog CF
 
 
 
-# 题解正文
-
 ---
 
-> A - Three Strings
+## A - Three Strings
 
 * 题意:
 给定三个长度相同字符串，A串与B串上的字符可以同时与C串上同位置的字符进行交换，每次交换必须A串、B串同时与C串交换。
@@ -64,7 +62,7 @@ int main()
 
 ---
 
-> B - Motarack's Birthday
+## B - Motarack's Birthday
 
 * 题意:
 给定一个数组，求一个k，将k替换所有的-1，使得max(ai-ai-1)最大
@@ -133,7 +131,7 @@ int main()
 
 ---
 
-> C - Ayoub's function
+## C - Ayoub's function
 
 * 题意:
 长度n的01串中有m个1，一个合法子串当且仅当子串里存在至少一个1，让你求出所有满足这样条件的01串中的合法子串最多有多少
@@ -173,7 +171,7 @@ int main()
 
 ---
 
-> D - Time to Run
+## D - Time to Run
 
 * 题意:
 给定一个n*m大小的图，从起点开始走，每一条边只能正反各穿过一次，问有K次机会，怎么走才能走更多的路。
