@@ -21,7 +21,7 @@ tags: MyBlog CF
 
 ---
 
-> A - Dead Pixel
+## A - Dead Pixel
 
 * 题意:
 给定a*b大小的屏幕，在这个屏幕上的（x,y）坐标处有一个坏点，问怎么裁切屏幕使新屏幕没有坏点。
@@ -52,7 +52,7 @@ int main()
 
 ---
 
-> B - Homecoming
+## B - Homecoming
 
 * 题意:
 输入一段路程的公交车和电车的排布，一个人需要从第一个站坐公交出行到最后一个站，他有p元钱，坐一次公交车和电车的花费分别是a，b元，问他至少需要走多少步开始坐车才能到达终点。
@@ -103,7 +103,7 @@ int main()
 
 ---
 
-> C - Restoring Permutation
+## C - Restoring Permutation
 
 * 题意:
 给定一个大小为n的序列b，求大小为2n的满足bi=min(ai−1,ai)的a序列，要求所有ai必须满足在1~2n之间，若ai不够的话就输出-1。
