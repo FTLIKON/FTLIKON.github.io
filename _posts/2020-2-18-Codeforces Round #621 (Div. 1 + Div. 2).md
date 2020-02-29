@@ -18,11 +18,7 @@ tags: MyBlog CF
 
 ---
 
-# 题解正文
-
----
-
-> A - Cow and Haybales
+## A - Cow and Haybales
 
 * 题意:
 有n堆干草排列，每一天可以把后一堆干草移到前一堆，给定m天，求第一堆干草的最大值。
@@ -62,7 +58,7 @@ int main()
 
 ---
 
-> B - Cow and Friend
+## B - Cow and Friend
 
 * 题意:
 一个兔子想从（0,0）跳到（x，0），每次可以跳的距离必须符合输入的n种情况之一，求兔子至少需要跳多少次才能达到。
@@ -103,7 +99,7 @@ int main()
 
 ---
 
-> C - Cow and Message
+## C - Cow and Message
 
 * 题意:
 给你一个字符串s，求其中下标间隔为等差数列的子串最多有多少。

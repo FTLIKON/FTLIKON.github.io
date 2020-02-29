@@ -24,10 +24,6 @@ tags: MyBlog CF
 
 ---
 
-# 题解正文
-
----
-
 > A - Two Rabbits
 
 * 题意:
