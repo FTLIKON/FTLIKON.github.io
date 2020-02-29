@@ -2,7 +2,7 @@
 layout: post
 title:  "Kuangbin专题十六 - KMP & 扩展KMP & Manacher模板总结"
 date:   2020-1-26 19:20:54
-categories: 心得 模板
+categories: 心得 模板 Kuangbin
 tags: MyBlog 模板 心得
 ---
 
