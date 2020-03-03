@@ -9,7 +9,13 @@ type: page
 * content
 {:toc}
 
-## 收藏网址
+# 收藏网址
+
+---
+
+## 工具类网址
+
+---
 
 * [big-jpg](https://bigjpg.com/)
 
@@ -17,7 +23,17 @@ type: page
 
 ---
 
+* [paste-ubuntu](https://paste.ubuntu.com/)
+
+    短时间分享代码/文本
+
+---
+
 * [程序未执行完自动关闭](https://zhidao.baidu.com/question/163808707.html)
+
+---
+
+## 语言学习类网址
 
 ---
 
@@ -38,6 +54,14 @@ type: page
 ---
 
 * [C语言图形化操作](https://blog.csdn.net/wang_zhao_/article/details/80456979)
+
+---
+
+* [位运算符(&、^、~等）详解](https://blog.csdn.net/Marccco/article/details/88709481)
+
+---
+
+## 算法学习类网址
 
 ---
 
@@ -86,9 +110,5 @@ type: page
 ---
 
 * [最长回文子串——马拉车算法详解](https://blog.csdn.net/HappyRocking/article/details/82622881)
-
----
-
-* [位运算符(&、^、~等）详解](https://blog.csdn.net/Marccco/article/details/88709481)
 
 ---
