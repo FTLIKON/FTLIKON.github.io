@@ -23,6 +23,7 @@ type: page
 
 ## 关于本站
 
-* 若您想使用这个博客主题，请访问：[https://github.com/FTLIKON/FTLIKON.github.io](https://github.com/FTLIKON/FTLIKON.github.io)
+* 若您想使用这个博客主题，请访问：  
+[https://github.com/FTLIKON/FTLIKON.github.io](https://github.com/FTLIKON/FTLIKON.github.io)
 
 

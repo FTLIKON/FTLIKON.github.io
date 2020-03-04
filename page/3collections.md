@@ -29,11 +29,11 @@ type: page
 
 ---
 
-* [程序未执行完自动关闭](https://zhidao.baidu.com/question/163808707.html)
+## 语言学习类网址
 
 ---
 
-## 语言学习类网址
+* [程序未执行完自动关闭](https://zhidao.baidu.com/question/163808707.html)
 
 ---
 
@@ -54,6 +54,10 @@ type: page
 ---
 
 * [C语言图形化操作](https://blog.csdn.net/wang_zhao_/article/details/80456979)
+
+---
+
+* [C++ cout格式化输出（输出格式）完全攻略](http://c.biancheng.net/view/275.html)
 
 ---
 
