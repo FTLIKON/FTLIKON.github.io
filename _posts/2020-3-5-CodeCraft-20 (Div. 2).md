@@ -142,3 +142,104 @@ int main()
 ```
 
 ---
+
+## D - Nash Matrix
+
+* 题意:  
+给出n*n的网格，再给出每个点的终点，-1 -1为永不停止的运动，问你是否能构造出这样的地图。
+
+* 思路:  
+1. 可知如果一个点的值就是它自己的终点的话，即为X。
+2. 那么从每一个X出发跑dfs，把所有相邻的且终点为这个X的点求出来
+3. 难点在于处理-1死循环的情况，考虑将所有相邻的-1两两成对的处理，通过判断上下左右的关系将这两个-1连起来。
+4. 如果最后这个地图还有还没处理完的地方，就输出INVALID。
+
+```c++
+
+const int M = 1005;
+char mat[M][M];
+int x[M][M], y[M][M];
+int n;
+
+bool connect(int p, int q, int r, int s, char d1, char d2)
+{
+	if (x[r][s] == -1)
+	{
+		mat[p][q] = d1;
+		if (mat[r][s] == '\0')
+			mat[r][s] = d2;
+		return 1;
+	}
+	else
+		return 0;
+}
+
+void dfs(int p, int q, char d)
+{
+	if (mat[p][q] != '\0')
+		return;
+	mat[p][q] = d;
+
+	if (x[p][q] == x[p + 1][q] && y[p][q] == y[p + 1][q])
+		dfs(p + 1, q, 'U');
+	if (x[p][q] == x[p - 1][q] && y[p][q] == y[p - 1][q])
+		dfs(p - 1, q, 'D');
+	if (x[p][q] == x[p][q + 1] && y[p][q] == y[p][q + 1])
+		dfs(p, q + 1, 'L');
+	if (x[p][q] == x[p][q - 1] && y[p][q] == y[p][q - 1])
+		dfs(p, q - 1, 'R');
+}
+
+int main()
+{
+	int i, j;
+	cin >> n;
+	for (i = 1; i <= n; ++i)
+		for (j = 1; j <= n; ++j)
+			cin >> x[i][j] >> y[i][j];
+
+	for (i = 1; i <= n; ++i)
+		for (j = 1; j <= n; ++j)
+			if (x[i][j] == -1)
+			{
+				bool res = (mat[i][j] != '\0');
+				if (res == 0)
+					res = connect(i, j, i + 1, j, 'D', 'U');
+				if (res == 0)
+					res = connect(i, j, i, j + 1, 'R', 'L');
+				if (res == 0)
+					res = connect(i, j, i - 1, j, 'U', 'D');
+				if (res == 0)
+					res = connect(i, j, i, j - 1, 'L', 'R');
+				if (res == 0)
+				{
+					cout << "INVALID" << endl;
+					return 0;
+				}
+			}
+			else if (x[i][j] == i && y[i][j] == j)
+				dfs(i, j, 'X');
+
+	for (i = 1; i <= n; ++i)
+		for (j = 1; j <= n; ++j)
+			if (mat[i][j] == '\0')
+			{
+				cout << "INVALID" << endl;
+				return 0;
+			}
+
+	cout << "VALID" << endl;
+
+	for (i = 1; i <= n; ++i)
+	{
+		for (j = 1; j <= n; ++j)
+			cout << mat[i][j];
+		cout << endl;
+	}
+
+	return 0;
+}
+
+```
+
+---
