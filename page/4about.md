@@ -18,8 +18,8 @@ type: page
 ## 联系我
 
 * GitHub：[https://github.com/FTLIKON](https://github.com/FTLIKON)
-* email：854892057@qq.com
-* QQ：854892057
+* email：3147983767@qq.com
+* QQ：3147983767
 
 ## 关于本站
 
