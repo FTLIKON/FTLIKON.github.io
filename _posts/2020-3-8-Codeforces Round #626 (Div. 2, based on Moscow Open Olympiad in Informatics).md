@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "CodeCraft-20 (Div. 2) 题解"
-date:   2020-3-5 14:57:23
+title:  "Codeforces Round #626 (Div. 2, based on Moscow Open Olympiad in Informatics) 题解"
+date:   2020-3-8 3:34:14
 categories: CodeForces 题解
 tags: MyBlog CF 
 ---
