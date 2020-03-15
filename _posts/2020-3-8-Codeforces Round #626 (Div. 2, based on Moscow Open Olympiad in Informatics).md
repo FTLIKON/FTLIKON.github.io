@@ -19,7 +19,7 @@ tags: MyBlog CF
 
 ---
 
-## A - A - Even Subset Sum Problem
+## A - Even Subset Sum Problem
 
 * 题意:  
 给定n个数的集合，求该集合总和为偶数的非空子集。

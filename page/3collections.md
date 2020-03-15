@@ -69,7 +69,7 @@ type: page
 
 ## 算法学习类网址
 
-### 基础思维
+### 优化技巧
 
 * [输入挂cin优化](https://blog.csdn.net/weixin_44772995/article/details/92839903)
 
@@ -79,10 +79,23 @@ type: page
 
 ---
 
+* [ACM卡常数（各种玄学优化）](https://www.cnblogs.com/xenny/p/9410888.html)
+
+---
+
+### 基础思维
+
+* [关于lower_bound( )和upper_bound( )的常见用法](https://blog.csdn.net/qq_40160605/article/details/80150252)
+
+---
+
 * [_builtin_popcount()计算二进制中多少个1](https://blog.csdn.net/gaochao1900/article/details/5646211)
 
 ---
 
+* [next_permutation用法](https://blog.csdn.net/qq_39936389/article/details/82633059)
+
+---
 * [二分查找数组下标](https://blog.csdn.net/u012194956/article/details/79103843)
 
 ---
@@ -128,6 +141,24 @@ type: page
 ---
 
 * [最长回文子串——马拉车算法详解](https://blog.csdn.net/HappyRocking/article/details/82622881)
+
+---
+
+### 线段树
+
+* [线段树详解及常用模板](https://www.cnblogs.com/xenny/p/9801703.html)
+
+---
+
+* [线段树的一些基础操作](http://blog.zinchon.cn/2019/09/SegmentTree2/#%E7%BA%BF%E6%AE%B5%E6%A0%91%E7%9A%84%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C)
+
+---
+
+* [线段树 + 离散化](https://blog.csdn.net/aqa2037299560/article/details/81568713?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+
+---
+
+* [线段树学习总结 - 离散化](http://blog.zinchon.cn/2020/03/SegmentTree3/)
 
 ---
 
