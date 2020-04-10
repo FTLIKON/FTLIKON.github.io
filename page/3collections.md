@@ -15,8 +15,6 @@ type: page
 
 ## 工具类网址
 
----
-
 * [big-jpg](https://bigjpg.com/)
 
     在线放大图片。
@@ -67,7 +65,53 @@ type: page
 
 ---
 
+* [C++ 中 fill() 的使用](https://blog.csdn.net/liu16659/article/details/87152348)
+
+---
+
+* [Union函数](https://www.cnblogs.com/aspirant/p/3853480.html)
+
+---
+
+* [unique 函数 详解](https://blog.csdn.net/qq_41325698/article/details/87557262)
+
+---
+
+* [史上最全的C++ STL 容器大礼包](https://www.cnblogs.com/fusiwei/p/11823234.html)
+
+---
+
+* [类的静态成员变量和静态成员函数](https://www.cnblogs.com/songhe364826110/p/11546148.html)
+
+---
+
+* [优先队列详解/C++](https://blog.csdn.net/a22222259/article/details/98626474)
+
+---
+
+* [尾递归为啥能优化？](https://zhuanlan.zhihu.com/p/36587160)
+
+---
+
 ## 算法学习类网址
+
+### 学习资源
+
+* [手把手撕LeetCode题目，扒各种算法套路的裤子](https://github.com/labuladong/fucking-algorithm?utm_source=qq&utm_medium=social&utm_oi=76107202166784)
+
+---
+
+* [《算法竞赛入门到进阶》 题目总结](https://vjudge.net/article/2033?tdsourcetag=s_pctim_aiomsg)
+
+---
+
+* [给ACM迷茫的同学](https://blog.csdn.net/MikeJackSTG/article/details/77370413?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158618587919726869049296%2522%252C%2522scm%2522%253A%252220140713.130056874..%2522%257D&request_id=158618587919726869049296&biz_id=0&utm_source=distribute.pc_search_result.none-task-blog-all_SOOPENSEARCH-9)
+
+---
+
+* [[kuangbin]各种各样的题单(去重后)](https://vjudge.net/article/752)
+
+---
 
 ### 优化技巧
 
@@ -96,6 +140,11 @@ type: page
 * [next_permutation用法](https://blog.csdn.net/qq_39936389/article/details/82633059)
 
 ---
+
+* [优先队列详解/C++](https://blog.csdn.net/a22222259/article/details/98626474)
+
+---
+
 * [二分查找数组下标](https://blog.csdn.net/u012194956/article/details/79103843)
 
 ---
@@ -105,6 +154,16 @@ type: page
 ---
 
 * [前缀和与差分](https://blog.nowcoder.net/n/5aeb050bfc90486098a099e9336b1661)
+
+---
+
+* [贪心算法：旅行商问题（TSP）](https://www.cnblogs.com/larryking/p/5734459.html)
+
+---
+
+### 搜索技术
+
+* [搜索与DP](https://mp.weixin.qq.com/s?__biz=MzIzMTE1ODkyNQ==&mid=2649410496&idx=1&sn=672cadad278af65052b3e3f1c572fdfd&chksm=f0b60e22c7c18734c59391eaf3910778e8142f76b1928bff90e356faab916ab1693bdf08b704&mpshare=1&scene=23&srcid=03298wTZ6TTo06Zi2jVD33PP&sharer_sharetime=1585479597483&sharer_shareid=24f69815f4c77d773143d446219765a6#rd)
 
 ---
 
@@ -215,5 +274,9 @@ type: page
 ---
 
 * [卡特兰数小结](https://www.cnblogs.com/z1141000271/p/12270197.html)
+
+---
+
+* [组合数C(n,m)的四种计算方法](https://blog.csdn.net/dadaguai001/article/details/81559554)
 
 ---
