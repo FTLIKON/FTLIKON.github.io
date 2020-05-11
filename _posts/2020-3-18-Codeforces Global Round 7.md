@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces Global Round 7 题解"
 date:   2020-3-18 11:33:14
 categories: CodeForces 题解
-tags: MyBlog CF 
+tags: CF 思维题 div.2
 ---
 
 * content
