@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces Round #624 (Div. 3) 题解"
 date:   2020-2-26 15:28:25
 categories: CodeForces 题解
-tags: MyBlog CF 
+tags: CF div.3 数学
 ---
 
 * content

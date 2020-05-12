@@ -3,7 +3,7 @@ layout: post
 title:  "Educational Codeforces Round 82 (Rated for Div. 2) 题解"
 date:   2020-2-13 14:48:54
 categories: CodeForces 题解
-tags: MyBlog CF 
+tags: CF div.2 进制 模拟
 ---
 
 * content

@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces Round #625 (Div. 2, based on Technocup 2020 Final Round) 题解"
 date:   2020-3-2 13:58:16
 categories: CodeForces 题解
-tags: MyBlog CF 
+tags: CF div.2 
 ---
 
 * content

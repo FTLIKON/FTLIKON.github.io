@@ -3,7 +3,7 @@ layout: post
 title:  "CodeCraft-20 (Div. 2) 题解"
 date:   2020-3-5 14:57:23
 categories: CodeForces 题解
-tags: MyBlog CF 
+tags: CF 数学 搜索 div.2
 ---
 
 * content

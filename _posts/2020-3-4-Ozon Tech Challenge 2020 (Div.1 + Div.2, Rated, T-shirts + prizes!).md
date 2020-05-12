@@ -3,7 +3,7 @@ layout: post
 title:  "Ozon Tech Challenge 2020 (Div.1 + Div.2, Rated, T-shirts + prizes!) 题解"
 date:   2020-3-4 14:22:58
 categories: CodeForces 题解
-tags: MyBlog CF 
+tags: CF 模拟 div.2 div.1
 ---
 
 * content

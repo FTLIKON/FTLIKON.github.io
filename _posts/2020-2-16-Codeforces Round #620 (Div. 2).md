@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces Round #620 (Div. 2) 题解"
 date:   2020-2-16 14:53:21
 categories: CodeForces 题解
-tags: MyBlog CF 
+tags: CF div.2 模拟
 ---
 
 * content

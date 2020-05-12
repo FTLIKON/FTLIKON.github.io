@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces Round #640 (Div. 4) 题解"
 date:   2020-5-10 9:48:14
 categories: CodeForces 题解
-tags: CF 思维题 div.4
+tags: CF div.4 模拟
 ---
 
 * content

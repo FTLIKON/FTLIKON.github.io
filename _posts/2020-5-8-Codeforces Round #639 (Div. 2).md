@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces Round #639 (Div. 2) 题解"
 date:   2020-5-8 18:34:14
 categories: CodeForces 题解
-tags: CF 思维题 搜索 div.2
+tags: CF 搜索 div.2
 ---
 
 * content

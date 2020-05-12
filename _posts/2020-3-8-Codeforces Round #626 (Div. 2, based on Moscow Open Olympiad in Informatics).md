@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces Round #626 (Div. 2, based on Moscow Open Olympiad in Informatics) 题解"
 date:   2020-3-8 3:34:14
 categories: CodeForces 题解
-tags: MyBlog CF 
+tags: CF div.2
 ---
 
 * content

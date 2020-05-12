@@ -3,7 +3,7 @@ layout: post
 title:  "AtCoder Beginner Contest 167题解"
 date:   2020-5-10 9:48:14
 categories: AtCoder 题解
-tags: AtCoder 思维题 搜索 好题
+tags: AtCoder 搜索 好题
 ---
 
 * content
