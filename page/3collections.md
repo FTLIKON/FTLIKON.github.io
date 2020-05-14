@@ -69,6 +69,14 @@ type: page
 
 ---
 
+* [c++ map与unordered_map区别及使用](https://blog.csdn.net/qq_21997625/article/details/84672775)
+
+---
+
+* [取整ceil() 函数](https://blog.csdn.net/lengyuezuixue/article/details/88089558)
+
+---
+
 * [Union函数](https://www.cnblogs.com/aspirant/p/3853480.html)
 
 ---
@@ -96,6 +104,8 @@ type: page
 ## 算法学习类网址
 
 ### 学习资源
+
+* [OI Wiki](https://oi-wiki.org/)
 
 * [手把手撕LeetCode题目，扒各种算法套路的裤子](https://github.com/labuladong/fucking-algorithm?utm_source=qq&utm_medium=social&utm_oi=76107202166784)
 
@@ -181,29 +191,15 @@ type: page
 
 ---
 
-### KMP
-
-* [KMP算法](https://blog.csdn.net/f1033774377/article/details/82556438)
+* [哈夫曼树及哈夫曼编码详解【完整版代码】](https://blog.csdn.net/wardseptember/article/details/80717653?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1)
 
 ---
 
-* [拓展kmp（EXKMP）算法总结](https://blog.csdn.net/dyx404514/article/details/41831947)
+* [哈夫曼编码的理解(Huffman Coding)](https://blog.csdn.net/qq_36653505/article/details/81701181)
 
 ---
 
-* [最小(大)表示法模板及详解](https://blog.csdn.net/li1615882553/article/details/80136776)
-
----
-
-* [关于Manacher/马拉车算法的个人总结](https://blog.csdn.net/JiangHxin/article/details/102554413)
-
----
-
-* [最长回文子串——马拉车算法详解](https://blog.csdn.net/HappyRocking/article/details/82622881)
-
----
-
-### 线段树
+#### 线段树
 
 * [线段树详解及常用模板](https://www.cnblogs.com/xenny/p/9801703.html)
 
@@ -221,6 +217,41 @@ type: page
 
 ---
 
+#### ST表
+
+* [【模板】ST表](https://www.cnblogs.com/kanchuang/p/11194075.html)
+
+---
+
+* [ST表 「 从入门到入门 · 浅显理解 」](https://blog.csdn.net/weixin_30755393/article/details/99942379)
+
+### 字符串
+
+#### KMP
+
+* [最小(大)表示法模板及详解](https://blog.csdn.net/li1615882553/article/details/80136776)
+
+---
+
+* [KMP算法](https://blog.csdn.net/f1033774377/article/details/82556438)
+
+---
+
+* [拓展kmp（EXKMP）算法总结](https://blog.csdn.net/dyx404514/article/details/41831947)
+
+---
+
+####　马拉车
+
+* [关于Manacher/马拉车算法的个人总结](https://blog.csdn.net/JiangHxin/article/details/102554413)
+
+---
+
+* [最长回文子串——马拉车算法详解](https://blog.csdn.net/HappyRocking/article/details/82622881)
+
+---
+
+
 ### 动态规划
 
 * [背包九讲](https://blog.csdn.net/yandaoqiusheng/article/details/84782655)
@@ -235,7 +266,13 @@ type: page
 
 ---
 
-### 最短路
+### 图论
+
+* [Tarjan算法 详解+心得](https://www.cnblogs.com/yanyiming10243247/p/9294160.html)
+
+---
+
+#### 最短路
 
 * [最短路入门合辑（附模板代码及水题）](https://blog.csdn.net/qq_43408978/article/details/99690151)
 
@@ -253,15 +290,6 @@ type: page
 
 ---
 
-### ST表
-
-* [【模板】ST表](https://www.cnblogs.com/kanchuang/p/11194075.html)
-
----
-
-* [ST表 「 从入门到入门 · 浅显理解 」](https://blog.csdn.net/weixin_30755393/article/details/99942379)
-
----
 
 ### 数论
 
