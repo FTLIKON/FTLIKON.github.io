@@ -241,7 +241,7 @@ type: page
 
 ---
 
-####　马拉车
+#### Manacher
 
 * [关于Manacher/马拉车算法的个人总结](https://blog.csdn.net/JiangHxin/article/details/102554413)
 
@@ -250,7 +250,6 @@ type: page
 * [最长回文子串——马拉车算法详解](https://blog.csdn.net/HappyRocking/article/details/82622881)
 
 ---
-
 
 ### 动态规划
 
