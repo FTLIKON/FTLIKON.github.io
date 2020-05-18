@@ -1,4 +1,4 @@
-title: LLB的个人主页
+title: FT.K的个人主页
 brief-intro: The ACdreamer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ftlikon.xyz/" # the base hostname & protocol for your site
@@ -15,7 +15,7 @@ zhihu_username:
 linkedIn_username:
 dribbble_username:
 
-description_footer: From LLB's Blog！
+description_footer: From FT.K's Blog！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
