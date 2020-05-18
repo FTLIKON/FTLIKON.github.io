@@ -45,8 +45,6 @@ type: page
 
 * [位运算符(&、^、~等）详解](https://blog.csdn.net/Marccco/article/details/88709481)
 
----
-
 ### C/C++
 
 * [理解指针含义](https://blog.csdn.net/u013252047/article/details/86537155)
@@ -65,7 +63,15 @@ type: page
 
 ---
 
-* [C++ 中 fill() 的使用](https://blog.csdn.net/liu16659/article/details/87152348)
+* [类的静态成员变量和静态成员函数](https://www.cnblogs.com/songhe364826110/p/11546148.html)
+
+---
+
+* [尾递归为啥能优化？](https://zhuanlan.zhihu.com/p/36587160)
+
+#### STL容器
+
+* [史上最全的C++ STL 容器大礼包](https://www.cnblogs.com/fusiwei/p/11823234.html)
 
 ---
 
@@ -73,33 +79,25 @@ type: page
 
 ---
 
-* [取整ceil() 函数](https://blog.csdn.net/lengyuezuixue/article/details/88089558)
-
----
-
-* [Union函数](https://www.cnblogs.com/aspirant/p/3853480.html)
-
----
-
-* [unique 函数 详解](https://blog.csdn.net/qq_41325698/article/details/87557262)
-
----
-
-* [史上最全的C++ STL 容器大礼包](https://www.cnblogs.com/fusiwei/p/11823234.html)
-
----
-
-* [类的静态成员变量和静态成员函数](https://www.cnblogs.com/songhe364826110/p/11546148.html)
-
----
-
 * [优先队列详解/C++](https://blog.csdn.net/a22222259/article/details/98626474)
 
+#### 各种函数
+
+* [C++ 中 fill() 的使用](https://blog.csdn.net/liu16659/article/details/87152348)
+
 ---
 
-* [尾递归为啥能优化？](https://zhuanlan.zhihu.com/p/36587160)
+
+* [取整 ceil() 函数](https://blog.csdn.net/lengyuezuixue/article/details/88089558)
 
 ---
+
+* [共用体 Union 函数](https://www.cnblogs.com/aspirant/p/3853480.html)
+
+---
+
+* [数组去重 unique 函数 详解](https://blog.csdn.net/qq_41325698/article/details/87557262)
+
 
 ## 算法学习类网址
 
@@ -117,13 +115,12 @@ type: page
 
 ---
 
-* [给ACM迷茫的同学](https://blog.csdn.net/MikeJackSTG/article/details/77370413?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158618587919726869049296%2522%252C%2522scm%2522%253A%252220140713.130056874..%2522%257D&request_id=158618587919726869049296&biz_id=0&utm_source=distribute.pc_search_result.none-task-blog-all_SOOPENSEARCH-9)
+* [ACM新手刷题指南](https://blog.csdn.net/MikeJackSTG/article/details/77370413?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158618587919726869049296%2522%252C%2522scm%2522%253A%252220140713.130056874..%2522%257D&request_id=158618587919726869049296&biz_id=0&utm_source=distribute.pc_search_result.none-task-blog-all_SOOPENSEARCH-9)
 
 ---
 
 * [[kuangbin]各种各样的题单(去重后)](https://vjudge.net/article/752)
 
----
 
 ### 优化技巧
 
@@ -137,9 +134,8 @@ type: page
 
 * [ACM卡常数（各种玄学优化）](https://www.cnblogs.com/xenny/p/9410888.html)
 
----
 
-### 基础思维
+### 函数/容器
 
 * [关于lower_bound( )和upper_bound( )的常见用法](https://blog.csdn.net/qq_40160605/article/details/80150252)
 
@@ -155,7 +151,9 @@ type: page
 
 * [优先队列详解/C++](https://blog.csdn.net/a22222259/article/details/98626474)
 
----
+
+### 基础思维
+
 
 * [二分查找数组下标](https://blog.csdn.net/u012194956/article/details/79103843)
 
@@ -171,19 +169,20 @@ type: page
 
 * [贪心算法：旅行商问题（TSP）](https://www.cnblogs.com/larryking/p/5734459.html)
 
----
 
 ### 搜索技术
 
 * [搜索与DP](https://mp.weixin.qq.com/s?__biz=MzIzMTE1ODkyNQ==&mid=2649410496&idx=1&sn=672cadad278af65052b3e3f1c572fdfd&chksm=f0b60e22c7c18734c59391eaf3910778e8142f76b1928bff90e356faab916ab1693bdf08b704&mpshare=1&scene=23&srcid=03298wTZ6TTo06Zi2jVD33PP&sharer_sharetime=1585479597483&sharer_shareid=24f69815f4c77d773143d446219765a6#rd)
 
----
 
 ### 数据结构
 
+#### 单调队列/栈
+
 * [单调队列与单调栈作用](https://www.cnblogs.com/lher/p/7620330.html)
 
----
+
+#### 哈夫曼编码
 
 * [哈夫曼树及哈夫曼编码详解【完整版代码】](https://blog.csdn.net/wardseptember/article/details/80717653?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1)
 
@@ -191,7 +190,14 @@ type: page
 
 * [哈夫曼编码的理解(Huffman Coding)](https://blog.csdn.net/qq_36653505/article/details/81701181)
 
+
+#### ST表
+
+* [【模板】ST表](https://www.cnblogs.com/kanchuang/p/11194075.html)
+
 ---
+
+* [ST表 「 从入门到入门 · 浅显理解 」](https://blog.csdn.net/weixin_30755393/article/details/99942379)
 
 #### 各种树
 
@@ -220,29 +226,20 @@ type: page
 
 * [漫画：什么是红黑树？](https://zhuanlan.zhihu.com/p/139907457)
 
-#### ST表
-
-* [【模板】ST表](https://www.cnblogs.com/kanchuang/p/11194075.html)
-
----
-
-* [ST表 「 从入门到入门 · 浅显理解 」](https://blog.csdn.net/weixin_30755393/article/details/99942379)
-
 ### 字符串
 
-#### KMP
+#### 最大/最小表示法
 
 * [最小(大)表示法模板及详解](https://blog.csdn.net/li1615882553/article/details/80136776)
 
----
+#### KMP
 
 * [KMP算法](https://blog.csdn.net/f1033774377/article/details/82556438)
 
----
+#### EXKMP
+
 
 * [拓展kmp（EXKMP）算法总结](https://blog.csdn.net/dyx404514/article/details/41831947)
-
----
 
 #### Manacher
 
@@ -251,8 +248,6 @@ type: page
 ---
 
 * [最长回文子串——马拉车算法详解](https://blog.csdn.net/HappyRocking/article/details/82622881)
-
----
 
 ### 动态规划
 
@@ -266,13 +261,9 @@ type: page
 
 * [教你彻底学会动态规划——进阶篇](https://blog.csdn.net/baidu_28312631/article/details/47426445)
 
----
-
 ### 图论
 
 * [Tarjan算法 详解+心得](https://www.cnblogs.com/yanyiming10243247/p/9294160.html)
-
----
 
 #### 最短路
 
@@ -290,9 +281,6 @@ type: page
 
 * [spfa 算法详解](https://blog.csdn.net/qq_34374664/article/details/52268542)
 
----
-
-
 ### 数论
 
 * [ACM数论之旅6---数论倒数，又称逆元](https://www.cnblogs.com/linyujun/p/5194184.html?tdsourcetag=s_pctim_aiomsg)
@@ -308,5 +296,3 @@ type: page
 ---
 
 * [组合数C(n,m)的四种计算方法](https://blog.csdn.net/dadaguai001/article/details/81559554)
-
----
