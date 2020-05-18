@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces Round #612 (Div. 2)题解-ABC"
 date:   2020-1-6 9:20:54
 categories: CodeForces 题解
-tags: MyBlog CF 
+tags: CF div.2
 ---
 
 * content

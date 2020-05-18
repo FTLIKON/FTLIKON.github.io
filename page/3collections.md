@@ -107,6 +107,8 @@ type: page
 
 * [OI Wiki](https://oi-wiki.org/)
 
+---
+
 * [手把手撕LeetCode题目，扒各种算法套路的裤子](https://github.com/labuladong/fucking-algorithm?utm_source=qq&utm_medium=social&utm_oi=76107202166784)
 
 ---
@@ -179,14 +181,6 @@ type: page
 
 ### 数据结构
 
-* [二叉树遍历详解](https://blog.csdn.net/young2415/article/details/87467118)
-
----
-
-* [浅谈Trie树（字典树）](https://www.cnblogs.com/TheRoadToTheGold/p/6290732.html)
-
----
-
 * [单调队列与单调栈作用](https://www.cnblogs.com/lher/p/7620330.html)
 
 ---
@@ -199,8 +193,11 @@ type: page
 
 ---
 
-#### 线段树
+#### 各种树
 
+* [二叉树遍历详解](https://blog.csdn.net/young2415/article/details/87467118)
+
+---
 * [线段树详解及常用模板](https://www.cnblogs.com/xenny/p/9801703.html)
 
 ---
@@ -216,6 +213,12 @@ type: page
 * [线段树学习总结 - 离散化](http://blog.zinchon.cn/2020/03/SegmentTree3/)
 
 ---
+
+* [浅谈Trie树（字典树）](https://www.cnblogs.com/TheRoadToTheGold/p/6290732.html)
+
+---
+
+* [漫画：什么是红黑树？](https://zhuanlan.zhihu.com/p/139907457)
 
 #### ST表
 
