@@ -12,6 +12,9 @@ tags: CF div.2 数学 贪心 好题 构造
 
 我TM肝爆
 
+
+
+
 ---
 
 ## A - Sequence with Digits
